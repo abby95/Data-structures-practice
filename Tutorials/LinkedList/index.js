@@ -75,6 +75,28 @@ class LinkedList {
             }
         }
     }
+
+
+    // IMportant
+    reverse() {
+        if (this.head === null) {
+            return null
+        }
+        let prev = null;
+        let currNode = this.head;
+        let next = null;
+        while (currNode) {
+            next = currNode.next;
+            currNode.next = prev
+
+            prev = currNode;
+            currNode = next;
+        }
+
+        this.head = prev
+
+        return
+    }
 }
 
 
@@ -89,4 +111,6 @@ list.insertFirst('HEllo')
 
 console.log("Get Node at Index 3::: " + JSON.stringify(list.getAt(3)))
 list.viewLinkedList();
-list.size()
+// list.size();
+list.reverse()
+list.viewLinkedList()

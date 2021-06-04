@@ -1,0 +1,13 @@
+
+Maximum consecutive repeating character in string
+
+Given a string, the task is to find the maximum consecutive repeating character in a string.
+Note: We do not need to consider the overall count, but the count of repeating that appears in one place.
+
+Examples: 
+
+Input : str = "geeekk"
+Output : e
+
+Input : str = "aaaabbcbbb"
+Output : a
